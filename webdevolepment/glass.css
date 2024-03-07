@@ -1,0 +1,61 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+    margin-top: 1rem;
+}
+.containetr{
+margin-top: 100px;
+height: auto;
+width: auto;
+}
+ .form{
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+    margin: 75px 0px 0px 450px;
+    padding :30px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+    
+#Username{
+    padding: 10px;
+    margin:5px;
+    outline:none;
+    border:2px solid green;
+    border-radius: 5px;
+}
+.first
+{
+    display: flex;
+    justify-content: space-between;
+}
+#Country{
+    margin-top: 20px;
+    padding: 10px;
+    width: 10em;
+    background-color:gray;
+    outline: none;
+    border-radius: 10px;
+    margin-top: -8px;
+}
+.part2{
+    position:absolute;
+    
+    margin-left: 20em;
+} 
+.submit-button{
+    
+}
+.empty1{
+    height: 200px;
+    width: 200px;
+    border: 2px;
+    border-radius: 75%;background-color: aqua;
+    position: absolute;
+    right:30px;
+    top:100px;
+
+}

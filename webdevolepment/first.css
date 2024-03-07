@@ -1,0 +1,74 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/* html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #bd7878de;
+    display: flex;
+}
+
+#part1 {
+    height: 100%;
+    width: 26%;
+    background-color: rgb(223, 170, 170); 
+}
+
+#part2 {
+    height: 100%;
+    width: 67%;
+    background-color: rgb(9, 122, 122);
+    background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    background-size: cover;
+    background-position: center;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(167, 147, 147);
+}
+
+#part3 {
+    height: 100%;
+    width: 7%;
+    background-color: rgb(136, 241, 122);
+} */
+.parent{
+    border: 1px solid red;
+    display: grid;
+    /* grid-template-columns: 450px 150px 450px; */
+    grid-template-columns: repeat(4,200px);/*short cut*/
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-template-columns: 1fr 2fr 3fr;
+}
+.child {
+    border: 1px solid gray;
+    height: 150px;
+}
+.item-1{
+    background-color: aqua;
+}
+.item-2{
+    background-color: rgb(0, 255, 55);
+}
+.item-3{
+    background-color: rgb(225, 0, 255);
+}
+.item-4{
+    background-color: rgb(204, 255, 0);
+}
+.item-5{
+    background-color: rgb(255, 119, 0);
+}
+.item-6{
+    background-color: rgb(0, 55, 255);
+}

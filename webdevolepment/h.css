@@ -1,0 +1,28 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+/* .foot{
+    height: 400px;
+    width: 400px;
+    background-color: greenyellow;
+} */
+/* [jyoti="noyda"]{
+    color: greenyellow;
+}
+p:hover{
+     color: aqua;
+}
+ul:hover{
+    color:chartreuse
+    
+}
+.ul{
+    overflow: scroll;
+} */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
