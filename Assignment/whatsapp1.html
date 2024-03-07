@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="classgrid.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+       
+    <div class="main_container border">
+            <div class="top_left flexbox">
+                <div>
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </div>
+                <div class="icons_top_left rin">
+                    <i class="fa fa-commenting-o" style="font-size: 23px"></i>
+                    <i class="fa fa-envelope-o" style="font-size: 23px"></i>
+                    <i class="fa fa-ellipsis-v" style="font-size: 23px"></i>
+                  </div>
+
+            </div>
+            <div class="top_right flexbox">
+                <div class="top_left flexbox">
+                    <img src="https://dpwalay.com/wp-content/uploads/2023/06/cuteness-cute-baby-pics-for-whatsapp-dp-4.jpg" alt="">
+                    <!-- <div>dsdsds</div> -->
+                    <span class="name_pl rin">Jyoti Bhasme</span>
+                </div>
+                <div class="icons_top_left">
+                    <i class="fa fa-search" style="font-size: 23px"></i>
+                    <i class="fa fa-ellipsis-v" style="font-size: 23px"></i>
+                </div>
+
+            </div>
+        <div class="mid_left">
+            <div class="search_bar_left flexbox rin">
+                <div class=" search_icon rin">
+                <i class="fa fa-search" style="font-size: 16px"></i>
+                <input type="search" placeholder="Search or start new chat">
+            </div>
+                <i class="fa fa-ellipsis-v" style="font-size: 23px"></i>
+                </div>
+
+
+            <div class="allfriend "> 
+                <!-- big container -->
+
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://cdn4.sharechat.com/img_466012_5580b4f_1668255462443_sc.jpg?tenant=sc&referrer=pwa-sharechat-service&f=443_sc.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Pranali gurnule</p>
+                            <span>Today</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Hi</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://careersplay.com/wp-content/uploads/2022/05/alone-emotional-for-whatsapp-dp.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Rohit</p>
+                            <span>yesterday</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Hi,How are you</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://img.freepik.com/premium-photo/cool-calm-images-whatsapp-profile-picture-ai-generated-art_873370-5050.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Zenifar</p>
+                            <span>yesterday</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Hi</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://cdn4.sharechat.com/img_187317_146588e7_1675712183530_sc.jpg?tenant=sc&referrer=pwa-sharechat-service&f=530_sc.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Ahana di
+                                <i class="fa fa-heart" style="font-size:13px;color:red"></i>
+                              </p>
+                            <span>22/10/2022</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Hello World</div>
+                    </div>
+                </div>
+                 <!-- one individual chat -->
+                 <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://www.momjunction.com/wp-content/uploads/2019/07/Whatsapp-DP13.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Subham dahilker</p>
+                            <span>14/10/2022</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Plan a trip</div>
+                    </div>
+                </div>
+                 <!-- one individual chat -->
+                 <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://careersplay.com/wp-content/uploads/2022/05/stylish-study-time-dp.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Umesh dada</p>
+                            <span>21/10/2022</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Bro!!!!!
+                            <!-- <i class="fa fa-gamepad" style="font-size:20px;color:rgb(185, 12, 12)"></i> -->
+                            <i class="fa fa-send-o" style="font-size:20px;color:rgb(70, 225, 65)"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://pxbar.com/wp-content/uploads/2023/09/dp-for-whatsapp-boys.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Vinay Bhiya
+                            <!-- <i class="fa fa-code-fork" style="font-size:20px;color:rgb(161, 59, 187)"></i>
+                            <i class="fa fa-code-fork" style="font-size:20px;color:royalblue"></i>
+                            <i class="fa fa-code-fork" style="font-size:20px;color:royalblue"></i> -->
+                            </p>
+                            <span>14/10/2022</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Menter</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://pxbar.com/wp-content/uploads/2023/09/girl-dp-for-whatsapp.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Renuka</p>
+                            <span>01/05/2022</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">what's up!!</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://photosfile.com/wp-content/uploads/2022/03/Motivational-DP-1.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Radha
+                                <!-- <i class="fa fa-cubes" style="font-size:20px;color:lightpink"></i> -->
+                                <i class="fa fa-soccer-ball-o" style="font-size:20px;color:rgb(189, 34, 57)"></i>
+
+
+                            </p>
+                            <span>yesterday</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Hi</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://e1.pxfuel.com/desktop-wallpaper/14/870/desktop-wallpaper-gudi-padwachya-shubhechha-a-glimpse-of-the-successful-rally-on-occasion-of%E2%80%A6-marathi-girls.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Ravina Mumbai</p>
+                            <span>17/10/2022</span>
+                             
+                        </div>
+                        <div class="last_message rin">Hi</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://photosfile.com/wp-content/uploads/2022/03/Motivational-DP-1.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Kaniska</p>
+                            <span>11/10/2022</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Hi</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4144uu79GuRh5xAhVH42wshiXG2o5aoydpqll_Me9GDp8bzdCV1yHxrcoCBweuzm0et0&usqp=CAU" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Devyanka</p>
+                            <span>04/08/2022</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Beautiful</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://e1.pxfuel.com/desktop-wallpaper/14/870/desktop-wallpaper-gudi-padwachya-shubhechha-a-glimpse-of-the-successful-rally-on-occasion-of%E2%80%A6-marathi-girls.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Seemar</p>
+                            <span>17/10/2022</span>
+                             
+                        </div>
+                        <div class="last_message rin">Hi</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://dpwalay.com/wp-content/uploads/2023/10/cool-dp-3.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Vidhya</p>
+                            <span>17/10/2022</span>
+                             
+                        </div>
+                        <div class="last_message rin">Lorem, ipsum dolor.</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://images.pexels.com/photos/1619697/pexels-photo-1619697.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Bishal</p>
+                            <span>17/10/2022</span>
+                             
+                        </div>
+                        <div class="last_message rin">Vishal with a "B"</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://dpwalay.com/wp-content/uploads/2023/10/cool-photos-for-whatsapp-dp-5.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Rizwana Khan</p>
+                            <span>17/10/2022</span>
+                             
+                        </div>
+                        <div class="last_message rin">Lorem, ipsum.</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://images.pexels.com/photos/1619697/pexels-photo-1619697.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Preet</p>
+                            <span>07/08/2022</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Hi</div>
+                    </div>
+                </div>
+                <!-- one individual chat -->
+                <div class="individual_details flexbox rin">
+                    <div class="friend_image">
+                        <img src="https://dpwalay.com/wp-content/uploads/2023/09/DP-images-16.jpg" alt="">
+                    </div>
+                    <div class="all_text rin">
+                        <div class="name_lastchat flexbox rin">
+                            <p>Srishti Lakhani</p>
+                            <span>12/08/2022</span>
+                            <!-- <p class="day">yesterday</p> -->
+                        </div>
+                        <div class="last_message rin">Hi</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="big_chat_box">
+            <div class="chat111 rin">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span class="chattext rin">Lorem ipsum dolor sit, ng elit. Culpa, consequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet co consequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet con . Culpa, consequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, a t. Culpa, consequatur.</span>
+            </div>
+
+            <div class="chat111 rin">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum d . Culpa, consequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet co  consequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <img src="https://www.momjunction.com/wp-content/uploads/2019/07/Whatsapp-DP13.jpg" alt="">
+                <!-- <span>Lorem ipsum dolor sit amet.</span> -->
+            </div>
+            <div class="chat2 rin">
+                <img src="https://spiffy-crostata-1793a6.netlify.app/image/student.jpg
+                " alt="">
+                 <!-- <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, consequatur.</span> -->
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet conse  consequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet consectetur onsequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet conse  consequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <img src="https://cdn2.momjunction.com/wp-content/uploads/2019/07/Whatsapp-DP39.jpg" alt="">
+                <!-- <span>Lorem ipsum dolor sit amet.</span> -->
+            </div>
+            <div class="chat2 rin">
+                <img src="https://www.momjunction.com/wp-content/uploads/2019/07/Whatsapp-DP13.jpg" alt="">
+                 <!-- <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, consequatur.</span> -->
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet conse  consequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet consectetur onsequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet conse  consequatur.</span>
+            </div>
+            
+
+            <div class="chat111">
+                <img src="https://spiffy-crostata-1793a6.netlify.app/image/student.jpg
+                " alt="">
+                <!-- <span>Lorem ipsum dolor sit amet.</span> -->
+            </div>
+            <div class="chat2 rin">
+                <img src="https://cdn2.momjunction.com/wp-content/uploads/2019/07/Whatsapp-DP39.jpg" alt="">
+                 <!-- <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, consequatur.</span> -->
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet conse  consequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet consectetur onsequatur.</span>
+            </div>
+
+            <div class="chat111">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="chat2 rin">
+                 <span>Lorem ipsum dolor sit, amet conse  consequatur.</span>
+            </div>
+            
+
+            
+            <div class="bottom flexbo rin">
+                <div class="bottom_chat_box flexbox rin">
+                    <i class="fa fa-smile-o rin" style="font-size: 27px"></i>
+                    <i class="fa fa-paperclip" style="font-size: 27px"></i>
+                    <input type="search" placeholder="Type a message" />
+                    <i class="fa fa-microphone" style="font-size: 27px"></i>
+                  </div>
+            </div>
+        </div>
+        <!-- <div class="child5">all list</div>  -->
+        
+        <!-- <div class="child6">searchbox</div>  -->
+     </div>
+</body>
+</html>
